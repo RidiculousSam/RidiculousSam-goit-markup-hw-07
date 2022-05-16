@@ -19,8 +19,9 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./style/styles.css" />
-    <title class="visually-hidden">Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title class="portfolio-title">Portfolio</title>
   </head>
   <body>
     <header class="header">
@@ -30,32 +31,38 @@
           >Web<span class="logo-blue">Studio</span></a
         >
         <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-list-item list">
-              <a class="nav-list-item-text" href="./index.html">Студия</a>
+          <ul class="menu-list">
+            <li class="menu-list__item list">
+              <a class="menu-list__text" href="./index.html">Студия</a>
             </li>
-            <li class="nav-list-item list">
-              <div class="nav-list-item-text-portfolio-after"> <a class="nav-list-item-text" href="./portfolio.html"
+            <li class="menu-list__item list">
+              <div class="menu-list__portfolio-after"> <a class="menu-list__text" href="./portfolio.html"
                 >Портфолио</a
               >
               </div>
             </li>
-            <li class="nav-list-item list">
-             <div class="nav-list-item-text-contacts-after"> <a class="nav-list-item-text" href="">Контакты</a>
-             </div>
+            <li class="menu-list__item list">
+            <div class="nav-list-item-text-contacts-after"> 
+            <a class="menu-list__text" href="">Контакты
+
+            </a>
+          </div>
             </li>
           </ul>
         </nav>
 
-        <a class="nav-mail" href="emailto:info@devstudio.com"
-          ><svg class="icon-envelope" width="16" , height="12">
-            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use></svg
-          >info@devstudio.com</a
+        <a class="mail" href="emailto:info@devstudio.com">
+          <svg class="icon" width="16" , height="12">
+            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+          </svg>
+          info@devstudio.com</a
         >
-        <a class="nav-phone" href="tel:+380961111111"
-          ><svg class="icon-phone" width="16" , height="12">
-            <use href="./images/symbol-defs.svg#icon-tel"></use></svg
-          >+38 096 111 11 11</a
+
+        <a class="phone" href="tel:+380961111111">
+          <svg class="icon" width="16" , height="12">
+            <use href="./images/symbol-defs.svg#icon-tel"></use>
+          </svg>
+          +38 096 111 11 11</a
         >
       </div>
     </header>
@@ -98,18 +105,17 @@
           <ul class="portfolio-projects-list">
             <li class="portfolio-projects-item list">
               <div class="portfolio-text-wrap">
-              <img
+                <img
                 class="portfolio-projects-img"
                 src="./images/notebook.jpg"
-                alt="макбук"
-              />
-              <p class="project-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице. </p>
+                alt="макбук"/>
+                  <p class="project-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице. </p>
               </div>
               <div class="portfolio-projetcs-block">
                 <h2 class="portfolio-projects-name">Технокряк</h2>
-                <p class="portfolio-projects-text">Веб-сайт</p>   
+                <p class="portfolio-projects-text">Веб-сайт</p>
+              </div>   
             </li>
-
             <li class="portfolio-projects-item list">
               <div class="portfolio-text-wrap">
               <img
@@ -240,11 +246,9 @@
     <footer class="footer">
       <!--подвал-->
       <div class="container">
-         <section class="left-side">
-          <address class="adress">
-            <a href="/index.html" class="logo-footer"
-              >Web<span class="logo-white">Studio</span></a
-            >
+          <section class="left-side">
+            <address class="adress">
+              <a href="/index.html" class="logo-footer">Web<span class="logo-white">Studio</span></a>
             <ul class="footer-list">
               <li class="footer-item list">
                 <a
@@ -276,28 +280,34 @@
                 ><svg class="footer-soc-icon" width="20" , height="20">
                   <use
                     href="./images/symbol-defs.svg#icon-instagram-2"
-                  ></use></svg
-              ></a>
+                  ></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-soc-item list">
-              <a class="footer-soc-link" href=""><svg class="footer-soc-icon" width="20" , height="20">
+              <a class="footer-soc-link" href="">
+                <svg class="footer-soc-icon" width="20" , height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-soc-item list">
-              <a class="footer-soc-link" href=""> <svg class="footer-soc-icon" width="20" , height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></a>
+              <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" , height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook">
+                  </svg>
+              </a>
             </li>
             <li class="footer-soc-item list">
-              <a class="footer-soc-link" href=""><svg class="footer-soc-icon" width="20" , height="20">
+              <a class="footer-soc-link" href="">
+                <svg class="footer-soc-icon" width="20" , height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin-1"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </section>
@@ -306,9 +316,12 @@
           
             <form class="form-block">
             <input type="email" name="user-email" class="footer-input" placeholder="E-mail">
-            <button type="submit" class="submit-mail"><span class="button-content">Подписаться<svg class="icon-send-footer" width="24" , height="24">
-         <use href="./images/symbol-defs.svg#icon-icon-send" ></use>
-                      </svg></span></button>
+            <button type="submit" class="submit-mail"><span class="button-content">Подписаться
+              <svg class="icon-send-footer" width="24" , height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send" ></use>
+              </svg>
+            </span>
+            </button>
           </form>
         </div>
         </section>

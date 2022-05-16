@@ -1,0 +1,110 @@
+.team {
+  padding-top: var(--padding-often);
+  padding-bottom: var(--padding-often);
+  background-color: #f5f4fa;
+
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &__item {
+    background: var(--whiteone);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    height: 1.03;
+  }
+
+  &__names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  &__skill {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 16px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--whiteone);
+  }
+  &__soc--list {
+    display: flex;
+    justify-content: center;
+  }
+  &__soc--link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--whiteone);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--blueone);
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__soc--item {
+    margin-right: 10px;
+  }
+  &__soc--icon {
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__soc--icon:hover {
+    fill: var(--whiteone);
+  }
+  &__soc--icon:focus {
+    background-color: #757575;
+    outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__soc--link:hover {
+    background-color: var(--blueone);
+  }
+  &__soc--link:hover .team__soc--icon {
+    fill: #fdfeff;
+  }
+  &__soc--link:focus .team__soc--icon {
+    background-color: var(--blueone);
+    fill: var(--whiteone);
+    outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__soc--link:focus {
+    background-color: var(--blueone);
+    outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
