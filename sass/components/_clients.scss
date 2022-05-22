@@ -2,13 +2,13 @@
   padding-bottom: var(--padding-often);
   padding-top: var(--padding-often);
 }
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: -30px;
 }
-.clients-link {
+.clients__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -20,18 +20,18 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-item {
+.clients__item {
   width: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
-.client-icon {
+.clients__icon {
   margin: 16px 32px;
 }
-.clients-link:hover {
+.clients__link:hover {
   border: 1px solid var(--blueone);
   fill: var(--blueone);
 }
-.clients-link:focus {
+.clients__link:focus {
   background-color: var(--whiteone);
   fill: var(--blueone);
   outline: none;
